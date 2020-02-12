@@ -7,3 +7,16 @@ In this project we used `collect data.py` to get the data from the course evalua
 > * some parts of data were not collected, but considering it being very little data it can be added manually by re-tracing it to its original file (course evaluation pdf) and and adding the missing values to the csv file using excel
 > * some files have 0 respondants to values for those rows will be N/A but we will deal with those rows when cleaning up the data
 > * some files have modes that have recuring values (i.e mode can be 1 and 2). we will come to a convention as to what value we will use
+
+## Analyzing the data
+> #### Loading libraries
+```{r}
+library(readr)
+library(tidyverse)
+```
+
+> #### Read in the data from our py file
+```{r}
+data <- read_csv("data.csv")
+head(data)
+```
